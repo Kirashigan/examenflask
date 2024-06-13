@@ -1,0 +1,8 @@
+@font-face {
+    font-family: C;
+    src: url("Hypereality Sans Serif.ttf");
+}
+
+*{
+    font-family: C;
+}

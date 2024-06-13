@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}Utilisateur{% endblock %}
+
+{% block content %}
+    <br><h2>Nos produits</h2>
+    <pre> {{ liste_user }} </pre>
+
+    {% for user in liste_user %}
+
+    <table class="table table-striped">
+        <thead>
+
+        <tr>
+            <th scope="col">Id Utilisateur</th>
+
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">email</th>
+        </tr>
+
+        </thead>
+        <tbody>
+
+        <tr>
+
+
+
+            <th><?= $liste[$i]->idtable;?></th>
+            <td contenteditable="true">{{ user.id_utilisateur }}</td>
+            <td contenteditable="true">{{ user.nom }}</td>
+            <td contenteditable="true" >{{ user.prenom }}</td>
+            <td contenteditable="true" >{{ user.email }}</td>
+
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
